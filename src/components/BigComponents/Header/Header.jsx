@@ -8,8 +8,8 @@ export default function Header() {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className="w-full h-auto mx-auto sticky z-50">
-      <nav className="max-w-[1280px] h-full mx-auto py-4 px-4 md:px-8 flex items-center justify-between">
+    <header className="w-full h-auto bg-primaryColor mx-auto sticky top-0 left-0 right-0 z-50">
+      <nav className="max-w-[1280px] h-full mx-auto p-4 md:px-8 flex items-center justify-between">
         {/* logo */}
         <div id="logo" className="text-3xl sm:text-4xl font-bold text-gray-200">
           <a href="/">{"<PB />"}</a>
@@ -49,11 +49,11 @@ export default function Header() {
       </nav>
 
       {/* mobile list items */}
-      <div className="relative ">
+      <div className="relative">
         <div
-          className={`w-full h-auto px-4 flex flex-col gap-8 md:hidden border-t-2 border-gray-800 absolute top-0 ${
+          className={`w-full h-[100vh] p-4 flex flex-col gap-8 md:hidden border-t-2 border-gray-800 absolute top-0 ${
             menu ? "left-0" : "-left-[100%]"
-          } pt-4 duration-300`}
+          } pt-4 duration-300 bg-primaryColor `}
         >
           <ul className="flex flex-col items-left gap-6 text-gray-900 sm:text-2xl ">
             {lists.map((list, index) => (

@@ -7,9 +7,14 @@ export default {
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        primaryColor: "var(--primary-color)",
+        primaryColor: "#030712",
         blueDeepColor: "#111827",
         blueLightColor: "#1F2937",
+
+        imgBg: "#374151",
+
+        textLight: "#D1D5DB",
+        textColor: "#F9FAFB",
       },
     },
   },
