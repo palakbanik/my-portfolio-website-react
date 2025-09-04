@@ -1,0 +1,82 @@
+import React, { useState } from "react";
+import { RiCloseLargeFill } from "react-icons/ri";
+import { TiThMenu } from "react-icons/ti";
+
+const lists = ["About", "Work", "Testimonials", "Contact"];
+
+export default function Header() {
+  const [menu, setMenu] = useState(false);
+
+  return (
+    <header className="w-full h-auto mx-auto sticky z-50">
+      <nav className="max-w-[1280px] h-full mx-auto py-4 px-4 md:px-8 flex items-center justify-between">
+        {/* logo */}
+        <div id="logo" className="text-3xl sm:text-4xl font-bold text-gray-200">
+          <a href="/">{"<PB />"}</a>
+        </div>
+
+        {/* desktop list items */}
+        <div className="hidden md:flex gap-10 ">
+          <ul className="flex items-center gap-6">
+            {lists.map((list, index) => (
+              <li
+                key={index}
+                className="text-gray-300 hover:opacity-90 text-base"
+              >
+                <a href="/">{list}</a>
+              </li>
+            ))}
+          </ul>
+
+          {/* button */}
+          <a href="/" className="md:border-l-2 md:pl-10">
+            <button className="bg-gray-200 text-gray-900 px-4 py-1.5 rounded-xl border-none outline-none hover:opacity-90">
+              Download CV
+            </button>
+          </a>
+        </div>
+
+        <button
+          className="md:hidden text-2xl font-bold text-gray-200"
+          onClick={() => setMenu(!menu)}
+        >
+          {menu ? (
+            <RiCloseLargeFill className="sm:text-[32px]" />
+          ) : (
+            <TiThMenu className="sm:text-[32px]" />
+          )}
+        </button>
+      </nav>
+
+      {/* mobile list items */}
+      <div className="relative ">
+        <div
+          className={`w-full h-auto px-4 flex flex-col gap-8 md:hidden border-t-2 border-gray-800 absolute top-0 ${
+            menu ? "left-0" : "-left-[100%]"
+          } pt-4 duration-300`}
+        >
+          <ul className="flex flex-col items-left gap-6 text-gray-900 sm:text-2xl ">
+            {lists.map((list, index) => (
+              <li
+                key={index}
+                className="text-gray-300 hover:opacity-90 text-base"
+              >
+                <a href="/">{list}</a>
+              </li>
+            ))}
+          </ul>
+
+          {/* button */}
+          <a
+            href="/"
+            className="md:border-l-2 md:pl-10 border-t-2 border-gray-800 pt-10"
+          >
+            <button className="bg-gray-200 w-full text-gray-900 sm:text-xl px-4 py-1.5 rounded-xl border-none outline-none hover:opacity-90">
+              Download CV
+            </button>
+          </a>
+        </div>
+      </div>
+    </header>
+  );
+}
