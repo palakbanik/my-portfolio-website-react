@@ -20,7 +20,7 @@ export default function About() {
       <div className="max-w-[1280px] mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12">
         <div className="flex flex-col md:flex-row items-center lg:items-start  justify-between gap-12 lg:gap-28 lg:-mt-10">
           {/* image part */}
-          <div className="mt-8 lg:mt-14">
+          <div className="mt-4 lg:mt-14">
             <ImagePart image={plkImg} />
           </div>
 
