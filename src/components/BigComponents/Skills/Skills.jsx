@@ -10,8 +10,18 @@ import react from "../../../assets/icon-react.svg";
 import tailwindcss from "../../../assets/icon-tailwindcss.png";
 import git from "../../../assets/vector.png";
 import github from "../../../assets/github.png";
+import css from "../../../assets/css.png";
+import html from "../../../assets/html.png";
 
 const images = [
+  {
+    name: "HTML",
+    image: html,
+  },
+  {
+    name: "CSS",
+    image: css,
+  },
   {
     name: "JavaScript",
     image: js,

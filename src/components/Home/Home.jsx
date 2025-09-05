@@ -5,6 +5,8 @@ import About from "../BigComponents/About/About";
 import Skills from "../BigComponents/Skills/Skills";
 import Work from "../BigComponents/Work/Work";
 import Testimonials from "../BigComponents/Testimonials/Testimonials";
+import Contact from "../BigComponents/Contact/Contact";
+import Footer from "../BigComponents/Footer/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Skills />
       <Work />
       <Testimonials />
+      <Contact />
+      <Footer />
     </>
   );
 }

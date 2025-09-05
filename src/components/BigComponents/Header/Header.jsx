@@ -7,7 +7,7 @@ const lists = [
   { id: 1, list: "Skills", link: "#skills" },
   { id: 1, list: "Projects", link: "#work" },
   { id: 1, list: "Testimonial", link: "#testimonials" },
-  { id: 1, list: "Contact", link: "#contact" },
+  { id: 1, list: "Contact", link: "#contacts" },
 ];
 
 export default function Header() {
