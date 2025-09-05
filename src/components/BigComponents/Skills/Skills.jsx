@@ -8,7 +8,7 @@ import ts from "../../../assets/icon-typescript.png";
 import figma from "../../../assets/icon-figma.svg";
 import react from "../../../assets/icon-react.svg";
 import tailwindcss from "../../../assets/icon-tailwindcss.png";
-import git from "../../../assets/vector.png";
+import git from "../../../assets/git.png";
 import github from "../../../assets/github.png";
 import css from "../../../assets/css.png";
 import html from "../../../assets/html.png";
