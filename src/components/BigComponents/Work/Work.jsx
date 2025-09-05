@@ -13,7 +13,7 @@ const works = [
   {
     image: groceryWebsite,
     title: "Grocery Website",
-    link: "",
+    link: "https://multipage-gorcery-website.netlify.app/",
     para: "I designed and developed a multi-page grocery website focusing on a clean UI, intuitive navigation, and responsive layouts. The project demonstrates my skills in structuring multiple pages, styling with modern web technologies, and creating a user-friendly shopping experience.",
   },
   {

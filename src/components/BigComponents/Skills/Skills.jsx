@@ -15,14 +15,6 @@ import html from "../../../assets/html.png";
 
 const images = [
   {
-    name: "HTML",
-    image: html,
-  },
-  {
-    name: "CSS",
-    image: css,
-  },
-  {
     name: "JavaScript",
     image: js,
   },
@@ -49,6 +41,14 @@ const images = [
   {
     name: "GitHub",
     image: github,
+  },
+  {
+    name: "HTML",
+    image: html,
+  },
+  {
+    name: "CSS",
+    image: css,
   },
 ];
 

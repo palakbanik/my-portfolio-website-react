@@ -11,7 +11,7 @@ const lists = [
 ];
 
 export default function Header() {
-  const [menu, setMenu] = useState(false);
+  let [menu, setMenu] = useState(false);
 
   return (
     <header className="w-full h-auto bg-primaryColor mx-auto fixed top-0 left-0 right-0 z-50">

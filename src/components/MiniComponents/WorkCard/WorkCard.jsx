@@ -52,7 +52,11 @@ export default function WorkCard({ work }) {
               ))}
             </div>
 
-            <a href={card.link} className="text-textColor text-lg md:text-xl">
+            <a
+              href={card.link}
+              target="_blank"
+              className="text-textColor text-lg md:text-xl"
+            >
               <FaArrowUpRightFromSquare />
             </a>
           </div>
