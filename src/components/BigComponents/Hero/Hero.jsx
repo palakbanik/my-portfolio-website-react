@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section id="hero">
       <div
-        className="max-w-[1280px] lg:h-[100vh] mx-auto px-4 py-16 flex flex-col md:flex-row-reverse items-center justify-center gap-12"
+        className="max-w-[1280px] lg:h-[100vh] mx-auto lg:mt-10 px-4 py-16 mt-20 flex flex-col md:flex-row-reverse items-center justify-center gap-12"
         draggable="false"
       >
         {/* image part */}
