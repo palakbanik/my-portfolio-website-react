@@ -44,8 +44,11 @@ const images = [
 
 export default function Skills() {
   return (
-    <section className="">
-      <div className="max-w-[1280px] mx-auto px-4 py-16 flex flex-col items-center text-center justify-center">
+    <section>
+      <div
+        id="skills"
+        className="max-w-[1280px] mx-auto px-4 py-20 flex flex-col items-center text-center justify-center"
+      >
         <div>
           <Heading text={"Skills"} />
         </div>

@@ -14,6 +14,10 @@
 	border: 1px solid red;
 } */
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--primary-color);
   color: #fff;

@@ -2,17 +2,23 @@ import React, { useState } from "react";
 import { RiCloseLargeFill } from "react-icons/ri";
 import { TiThMenu } from "react-icons/ti";
 
-const lists = ["About", "Work", "Testimonials", "Contact"];
+const lists = [
+  { id: 1, list: "About", link: "#about" },
+  { id: 1, list: "Skills", link: "#skills" },
+  { id: 1, list: "Projects", link: "#work" },
+  { id: 1, list: "Testimonial", link: "#testimonials" },
+  { id: 1, list: "Contact", link: "#contact" },
+];
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className="w-full h-auto bg-primaryColor mx-auto sticky top-0 left-0 right-0 z-50">
+    <header className="w-full h-auto bg-primaryColor mx-auto fixed top-0 left-0 right-0 z-50">
       <nav className="max-w-[1280px] h-full mx-auto p-4 md:px-8 flex items-center justify-between">
         {/* logo */}
         <div id="logo" className="text-3xl sm:text-4xl font-bold text-gray-200">
-          <a href="/">{"<PB />"}</a>
+          <a href="#hero">{"<PB />"}</a>
         </div>
 
         {/* desktop list items */}
@@ -23,7 +29,9 @@ export default function Header() {
                 key={index}
                 className="text-gray-300 hover:opacity-90 text-base"
               >
-                <a href="/">{list}</a>
+                <a href={list.link} key={list.id}>
+                  {list.list}
+                </a>
               </li>
             ))}
           </ul>
@@ -61,7 +69,9 @@ export default function Header() {
                 key={index}
                 className="text-gray-300 hover:opacity-90 text-base"
               >
-                <a href="/">{list}</a>
+                <a href={list.link} key={list.id}>
+                  {list.list}
+                </a>
               </li>
             ))}
           </ul>

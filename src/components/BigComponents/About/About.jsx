@@ -13,7 +13,7 @@ const aboutMe = [
 
 export default function About() {
   return (
-    <section className="bg-blueDeepColor py-16">
+    <section id="about" className="bg-blueDeepColor py-20">
       <div className="flex items-center justify-center mb-20">
         <Heading text={"About me"} />
       </div>

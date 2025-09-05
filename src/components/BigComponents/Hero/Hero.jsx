@@ -6,9 +6,9 @@ import IconComponent from "../../MiniComponents/IconComponent/IconComponent";
 
 export default function Hero() {
   return (
-    <section>
+    <section id="hero">
       <div
-        className="max-w-[1280px] lg:h-[80vh] mx-auto px-4 py-16 flex flex-col md:flex-row-reverse items-center justify-center gap-12"
+        className="max-w-[1280px] lg:h-[100vh] mx-auto px-4 py-16 flex flex-col md:flex-row-reverse items-center justify-center gap-12"
         draggable="false"
       >
         {/* image part */}
