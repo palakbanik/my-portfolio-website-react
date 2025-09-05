@@ -32,10 +32,10 @@ export default function About() {
             <div className="text-sm lg:text-base text-textLight flex flex-col gap-4 sm:gap-6 max-w-[600px]">
               <p>
                 I'm a passionate, self-proclaimed designer who specializes in
-                front-end development (React.js). I am very enthusiastic about
-                bringing the technical and visual aspects of digital products to
-                life. User experience, pixel perfect design, and writing clear,
-                readable, highly performant code matters to me.
+                front-end development. I am very enthusiastic about bringing the
+                technical and visual aspects of digital products to life. User
+                experience, pixel perfect design, and writing clear, readable,
+                highly performant code matters to me.
               </p>
               <p>
                 I began my journey as a web developer in 2024, and since then,
