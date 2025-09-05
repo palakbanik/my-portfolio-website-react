@@ -8,7 +8,7 @@ import { GoMail } from "react-icons/go";
 
 export default function Contact() {
   return (
-    <section id="contacts" className="bg-blueLightColor py-16">
+    <section id="contacts" className="bg-blueDeepColor py-16">
       <div className="max-w-[1280px] mx-auto p-4 flex flex-col items-center justify-center text-center gap-12">
         {/* heading */}
         <div className="flex flex-col items-center justify-center mx-auto gap-4 lg:gap-6 text-center max-w-[650px]">
