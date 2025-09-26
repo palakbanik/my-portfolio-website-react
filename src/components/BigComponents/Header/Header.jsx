@@ -4,10 +4,10 @@ import { TiThMenu } from "react-icons/ti";
 
 const lists = [
   { id: 1, list: "About", link: "#about" },
-  { id: 1, list: "Skills", link: "#skills" },
-  { id: 1, list: "Projects", link: "#work" },
-  { id: 1, list: "Testimonial", link: "#testimonials" },
-  { id: 1, list: "Contact", link: "#contacts" },
+  { id: 2, list: "Skills", link: "#skills" },
+  { id: 3, list: "Projects", link: "#work" },
+  { id: 4, list: "Testimonial", link: "#testimonials" },
+  { id: 5, list: "Contact", link: "#contacts" },
 ];
 
 export default function Header() {
